@@ -75,10 +75,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 /etc/X11/wmconfig/%{name}
-
-%changelog
-* Thu May 20 1999 Piotr Czerwiñski <pius@pld.org.pl> 
-  [1.0-13]
-- spec file based on RH version; rewritten for PLD use by me,
-  Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  and Wojtek ¦lusarczyk <wojtek@shadow.eu.org>.
