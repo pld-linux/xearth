@@ -13,6 +13,8 @@ Source:		ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
 BuildPrereq:	XFree86-devel
 Buildroot:	/tmp/%{name}-%{version}-root
 
+%define	_prefix		/usr/X11R6
+
 %description
 Xearth displays a pseudo-3D globe that rotates to show the earth as it
 actually is, including markers for major cities and PLD & RH :-).
@@ -46,19 +48,20 @@ make CDEBUGFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{etc/X11/wmconfig,usr/X11R6/{bin,share/man/man1}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1} \
+	$RPM_BUILD_ROOT/etc/X11/wmconfig
 
-install xearth $RPM_BUILD_ROOT/usr/X11R6/bin
-install xearth.man $RPM_BUILD_ROOT/usr/X11R6/share/man/man1/xearth.1
+install %{name} $RPM_BUILD_ROOT%{_bindir}
+install %{name}.man $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 
-cat > $RPM_BUILD_ROOT/etc/X11/wmconfig/xearth <<EOF
-xearth name "xearth"
-xearth description "xearth"
-xearth group Amusements
-xearth exec "xearth -fork"
+cat > $RPM_BUILD_ROOT/etc/X11/wmconfig/%{name} <<EOF
+%{name} name "%{name}"
+%{name} description "%{name}"
+%{name} group Amusements
+%{name} exec "%{name} -fork"
 EOF
 
-gzip -9nf $RPM_BUILD_ROOT/usr/X11R6/share/man/man1/* \
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
 	README
 
 %clean
@@ -67,10 +70,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.gz
-%attr(755,root,root) /usr/X11R6/bin/*
-/usr/X11R6/share/man/man1/*
+%attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
 
-/etc/X11/wmconfig/xearth
+/etc/X11/wmconfig/%{name}
 
 %changelog
 * Sat May 15 1999 Piotr Czerwiñski <pius@pld.org.pl>
