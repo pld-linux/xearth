@@ -13,7 +13,7 @@ Source:		ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
 BuildPrereq:	XFree86-devel
 Buildroot:	/tmp/%{name}-%{version}-root
 
-%define	_prefix		/usr/X11R6
+%define	_prefix	/usr/X11R6
 
 %description
 Xearth displays a pseudo-3D globe that rotates to show the earth as it
@@ -76,20 +76,8 @@ rm -rf $RPM_BUILD_ROOT
 /etc/X11/wmconfig/%{name}
 
 %changelog
-* Sat May 15 1999 Piotr Czerwiñski <pius@pld.org.pl>
+* Thu May 20 1999 Piotr Czerwiñski <pius@pld.org.pl> 
   [1.0-13]
-- cleaned up a bit spec file,
-- added BuildPrereq rules,
-- rebuild on rpm 3,
-- package is now FHS 2.0 compliant.
-
-* Wed Jan 06 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [1.0-12]
-- removed patch,
-- changed way of passing $RPM_OPT_FLAGS.
-
-* Thu Jul 23 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
-- major changes && rewrote spec file.
-
-* Mon Apr 27 1998 Prospector System <bugs@redhat.com>
-- translations modified for de, fr, tr
+- spec file based on RH version; rewritten for PLD use by me,
+  Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  and Wojtek ¦lusarczyk <wojtek@shadow.eu.org>.
