@@ -12,7 +12,7 @@ Group(pl):	X11/Rozrywka
 Source0:	ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
 Source1:	xearth.desktop
 BuildRequires:	XFree86-devel
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define 	_mandir 	%{_prefix}/man
