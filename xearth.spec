@@ -8,9 +8,10 @@ Version:	1.1
 Release:	2
 License:	MIT
 Group:		X11/Amusements
+Group(de):	X11/Unterhaltung
 Group(pl):	X11/Rozrywka
 Source0:	ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
-Source1:	xearth.desktop
+Source1:	%{name}.desktop
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -48,7 +49,7 @@ bir arka plan resmi kendisini güncelleyecektir.
 
 %build
 xmkmf
-%{__make} CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%{__make} CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -59,8 +60,7 @@ install %{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}.man $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Amusements
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	README
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
