@@ -72,14 +72,13 @@ install %{name}.man $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Amusements
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
 %{_applnkdir}/Amusements/*
