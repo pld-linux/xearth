@@ -10,8 +10,6 @@ Version:	1.1
 Release:	6
 License:	MIT
 Group:		X11/Amusements
-Group(de):	X11/Unterhaltung
-Group(pl):	X11/Rozrywka
 Source0:	ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
