@@ -14,6 +14,7 @@ BuildPrereq:	XFree86-devel
 Buildroot:	/tmp/%{name}-%{version}-root
 
 %define	_prefix	/usr/X11R6
+%define _mandir %{_prefix}/man
 
 %description
 Xearth displays a pseudo-3D globe that rotates to show the earth as it
