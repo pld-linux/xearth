@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=xearth
 Comment=Earth image in X root window
+Comment[pl]=Widok Ziemi jako t³o X
 Icon=xearth.png
 Exec=xearth -fork
 Terminal=0
