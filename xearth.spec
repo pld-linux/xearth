@@ -11,6 +11,7 @@ Release:	6
 License:	MIT
 Group:		X11/Amusements
 Source0:	ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
+# Source0-md5:	6e409dffaa8dc5fae1064e38935ab61f
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 BuildRequires:	XFree86-devel
