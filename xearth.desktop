@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=xearth
+Comment=Earth image in X root window
+Exec=xearth -fork
+Terminal=0
+Type=Application
