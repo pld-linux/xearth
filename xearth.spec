@@ -10,7 +10,7 @@ Copyright:	MIT
 Group:		X11/Amusements
 Group(pl):	X11/Rozrywka
 Source:		ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
-BuildPrereq:	XFree86-devel
+BuildRequires:	XFree86-devel
 Buildroot:	/tmp/%{name}-%{version}-root
 
 %define	_prefix	/usr/X11R6
