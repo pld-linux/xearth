@@ -1,15 +1,17 @@
-Summary:     Displays a lit globe in the background of your X screen
-Summary(de): Anzeige eines erleuchteten Globus im Hintergrund Ihres X-Bildschirms 
-Summary(fr): Affiche un globe terrestre illuminé dans le fond de votre écran X
-Summary(pl): T³o w postaci animowanej kuli ziemskiej dla X Window System
-Summary(tr): X ekranýnýzýn arkaplanýnda bir dünya görüntüsü
-Name:        xearth
-Version:     1.0
-Release:     12
-Copyright:   MIT
-Group:       X11/Amusements
-Source:      ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
-Buildroot:   /tmp/%{name}-%{version}-root
+Summary:	Displays a lit globe in the background of your X screen
+Summary(de):	Anzeige eines erleuchteten Globus im Hintergrund Ihres X-Bildschirms 
+Summary(fr):	Affiche un globe terrestre illuminé dans le fond de votre écran X
+Summary(pl):	T³o w postaci animowanej kuli ziemskiej dla X Window System
+Summary(tr):	X ekranýnýzýn arkaplanýnda bir dünya görüntüsü
+Name:		xearth
+Version:	1.0
+Release:	13
+Copyright:	MIT
+Group:		X11/Amusements
+Group(pl):	X11/Rozrywka
+Source:		ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
+BuildPrereq:	XFree86-devel
+Buildroot:	/tmp/%{name}-%{version}-root
 
 %description
 Xearth displays a pseudo-3D globe that rotates to show the earth as it
@@ -44,10 +46,10 @@ make CDEBUGFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{etc/X11/wmconfig,usr/X11R6/{bin,man/man1}}
+install -d $RPM_BUILD_ROOT/{etc/X11/wmconfig,usr/X11R6/{bin,share/man/man1}}
 
 install xearth $RPM_BUILD_ROOT/usr/X11R6/bin
-install xearth.man $RPM_BUILD_ROOT/usr/X11R6/man/man1/xearth.1
+install xearth.man $RPM_BUILD_ROOT/usr/X11R6/share/man/man1/xearth.1
 
 cat > $RPM_BUILD_ROOT/etc/X11/wmconfig/xearth <<EOF
 xearth name "xearth"
@@ -56,20 +58,28 @@ xearth group Amusements
 xearth exec "xearth -fork"
 EOF
 
-gzip -9nf $RPM_BUILD_ROOT/usr/X11R6/man/man1/*
+gzip -9nf $RPM_BUILD_ROOT/usr/X11R6/share/man/man1/* \
+	README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
-%doc README
-%attr(755, root, root) /usr/X11R6/bin/*
-%attr(644, root,  man) /usr/X11R6/man/man1/*
+%defattr(644,root,root,755)
+%doc README.gz
+%attr(755,root,root) /usr/X11R6/bin/*
+/usr/X11R6/share/man/man1/*
 
-%config /etc/X11/wmconfig/xearth
+/etc/X11/wmconfig/xearth
 
 %changelog
+* Sat May 15 1999 Piotr Czerwiñski <pius@pld.org.pl>
+  [1.0-13]
+- cleaned up a bit spec file,
+- added BuildPrereq rules,
+- rebuild on rpm 3,
+- package is now FHS 2.0 compliant.
+
 * Wed Jan 06 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [1.0-12]
 - removed patch,
