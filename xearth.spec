@@ -7,7 +7,7 @@ Summary(pt_BR):	Mostra um globo terrestre em pano de fundo de seu tela X
 Summary(tr):	X ekranýnýzýn arkaplanýnda bir dünya görüntüsü
 Name:		xearth
 Version:	1.1
-Release:	6
+Release:	7
 License:	MIT
 Group:		X11/Amusements
 Source0:	ftp://cag.lcs.mit.edu/pub/tuna/%{name}-%{version}.tar.gz
