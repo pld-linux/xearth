@@ -1,5 +1,5 @@
 Summary:	Displays a lit globe in the background of your X screen
-Summary(de):	Anzeige eines erleuchteten Globus im Hintergrund Ihres X-Bildschirms 
+Summary(de):	Anzeige eines erleuchteten Globus im Hintergrund Ihres X-Bildschirms
 Summary(es):	Enseña un globo terrestre, como tapiz de fondo, de tu pantalla X
 Summary(fr):	affiche en 3D la terre vue du soleil en fonds d'écran
 Summary(pl):	T³o w postaci animowanej kuli ziemskiej dla X Window System
