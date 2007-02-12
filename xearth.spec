@@ -1,10 +1,10 @@
 Summary:	Displays a lit globe in the background of your X screen
-Summary(de):	Anzeige eines erleuchteten Globus im Hintergrund Ihres X-Bildschirms
-Summary(es):	Enseña un globo terrestre, como tapiz de fondo, de tu pantalla X
-Summary(fr):	affiche en 3D la terre vue du soleil en fonds d'écran
-Summary(pl):	T³o w postaci animowanej kuli ziemskiej dla X Window System
-Summary(pt_BR):	Mostra um globo terrestre em pano de fundo de seu tela X
-Summary(tr):	X ekranınızın arkaplanında bir dünya görüntüsü
+Summary(de.UTF-8):   Anzeige eines erleuchteten Globus im Hintergrund Ihres X-Bildschirms
+Summary(es.UTF-8):   EnseÃ±a un globo terrestre, como tapiz de fondo, de tu pantalla X
+Summary(fr.UTF-8):   affiche en 3D la terre vue du soleil en fonds d'Ã©cran
+Summary(pl.UTF-8):   TÅ‚o w postaci animowanej kuli ziemskiej dla X Window System
+Summary(pt_BR.UTF-8):   Mostra um globo terrestre em pano de fundo de seu tela X
+Summary(tr.UTF-8):   X ekranÄ±nÄ±zÄ±n arkaplanÄ±nda bir dÃ¼nya gÃ¶rÃ¼ntÃ¼sÃ¼
 Name:		xearth
 Version:	1.1
 Release:	8
@@ -26,35 +26,35 @@ Earth, including markers for major cities. The Earth is correctly
 shaded for the current position of the sun, and the displayed image is
 updated every five minutes.
 
-%description -l es
-Xearth enseña un globo pseudo 3D que cumple un movimiento de rotación
-para enseñar la tierra como realmente es, mostrando marcas en ciudades
-principales, y en RedHat Software y Conectiva también :-))
+%description -l es.UTF-8
+Xearth enseÃ±a un globo pseudo 3D que cumple un movimiento de rotaciÃ³n
+para enseÃ±ar la tierra como realmente es, mostrando marcas en ciudades
+principales, y en RedHat Software y Conectiva tambiÃ©n :-))
 
-%description -l de
+%description -l de.UTF-8
 Xearth stellt einen rotierenden pseudo-3D-Globus dar, auf dem die
-wichtigsten Städte und PLD & RH eingezeichnet sind:-).
+wichtigsten StÃ¤dte und PLD & RH eingezeichnet sind:-).
 
-%description -l fr
-Xearth est un programme pour le système X Window qui affiche le globe
+%description -l fr.UTF-8
+Xearth est un programme pour le systÃ¨me X Window qui affiche le globe
 terrestre en 3D, tel qui l'est vu du soleil (avec ombrage). Les
-continents sont parsemées par des points indiquant les grandes villes
+continents sont parsemÃ©es par des points indiquant les grandes villes
 ainsi.
 
-%description -l pl
-Xearth wy¶wietla pseudo-3D obracaj±c± siê w odstêpach czasowych kulê
-ziemska, oraz punkty z zaznaczonymi najwiêkszymi aglomeracjami Ziemi.
+%description -l pl.UTF-8
+Xearth wyÅ›wietla pseudo-3D obracajÄ…cÄ… siÄ™ w odstÄ™pach czasowych kulÄ™
+ziemska, oraz punkty z zaznaczonymi najwiÄ™kszymi aglomeracjami Ziemi.
 
-%description -l pt_BR
+%description -l pt_BR.UTF-8
 Xearth mostra um globo pseudo-3D que rotaciona para mostrar a terra
-como ela realmente é, mostrando marcas para cidades principais, RedHat
-Software e a Conectiva também :-))
+como ela realmente Ã©, mostrando marcas para cidades principais, RedHat
+Software e a Conectiva tambÃ©m :-))
 
-%description -l tr
-xearth, dünyanın o saatte güneşe göre durumunu ve üzerindeki belli
-başlı şehirleri grafik olarak gösterir. Özellikle X ortamında arka
-plan olarak kullanılması tavsiye edilir. Bu durumda her beş dakikada
-bir arka plan resmi kendisini güncelleyecektir.
+%description -l tr.UTF-8
+xearth, dÃ¼nyanÄ±n o saatte gÃ¼neÅŸe gÃ¶re durumunu ve Ã¼zerindeki belli
+baÅŸlÄ± ÅŸehirleri grafik olarak gÃ¶sterir. Ã–zellikle X ortamÄ±nda arka
+plan olarak kullanÄ±lmasÄ± tavsiye edilir. Bu durumda her beÅŸ dakikada
+bir arka plan resmi kendisini gÃ¼ncelleyecektir.
 
 %prep
 %setup -q
