@@ -1,10 +1,10 @@
 Summary:	Displays a lit globe in the background of your X screen
-Summary(de.UTF-8):   Anzeige eines erleuchteten Globus im Hintergrund Ihres X-Bildschirms
-Summary(es.UTF-8):   Enseña un globo terrestre, como tapiz de fondo, de tu pantalla X
-Summary(fr.UTF-8):   affiche en 3D la terre vue du soleil en fonds d'écran
-Summary(pl.UTF-8):   Tło w postaci animowanej kuli ziemskiej dla X Window System
-Summary(pt_BR.UTF-8):   Mostra um globo terrestre em pano de fundo de seu tela X
-Summary(tr.UTF-8):   X ekranınızın arkaplanında bir dünya görüntüsü
+Summary(de.UTF-8):	Anzeige eines erleuchteten Globus im Hintergrund Ihres X-Bildschirms
+Summary(es.UTF-8):	Enseña un globo terrestre, como tapiz de fondo, de tu pantalla X
+Summary(fr.UTF-8):	affiche en 3D la terre vue du soleil en fonds d'écran
+Summary(pl.UTF-8):	Tło w postaci animowanej kuli ziemskiej dla X Window System
+Summary(pt_BR.UTF-8):	Mostra um globo terrestre em pano de fundo de seu tela X
+Summary(tr.UTF-8):	X ekranınızın arkaplanında bir dünya görüntüsü
 Name:		xearth
 Version:	1.1
 Release:	8
