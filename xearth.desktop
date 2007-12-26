@@ -2,10 +2,9 @@
 Name=Xearth
 Comment=Earth image in X root window
 Comment[pl]=Widok Ziemi jako tło X
-Icon=xearth.png
+Icon=xearth
 Exec=xearth -fork
 Terminal=false
 Type=Application
-Encoding=UTF-8
 Categories=Amusement;
 # vi: encoding=utf-8
